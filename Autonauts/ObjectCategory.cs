@@ -1,0 +1,21 @@
+public enum ObjectCategory
+{
+	Tools,
+	Bots,
+	Parts,
+	Food,
+	Clothing,
+	Leisure,
+	Medicine,
+	Education,
+	Art,
+	Wildlife,
+	Vehicles,
+	Misc,
+	Buildings,
+	Hidden,
+	Any,
+	Effects,
+	Prizes,
+	Total
+}

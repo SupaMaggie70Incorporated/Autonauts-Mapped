@@ -1,0 +1,19 @@
+public enum Layers
+{
+	Used0,
+	Used1,
+	Used2,
+	Used3,
+	Used4,
+	Used5,
+	Used6,
+	Used7,
+	GrabPlane,
+	Tiles,
+	Buildings,
+	Workers,
+	Misc,
+	MiscSmall,
+	WorkersDead,
+	Total
+}

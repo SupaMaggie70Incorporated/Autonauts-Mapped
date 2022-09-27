@@ -1,0 +1,36 @@
+using UnityEngine;
+
+public class FishingJunk : TileCoordObject
+{
+	private bool m_Melting;
+
+	private float m_MeltTimer;
+
+	public override void Restart()
+	{
+		base.Restart();
+		m_Melting = true;
+		m_MeltTimer = 0f;
+		SetProgress(1f);
+	}
+
+	public void SetProgress(float Progress)
+	{
+		base.transform.localScale = new Vector3(1f, Progress + 0.01f, 1f);
+	}
+
+	private void Update()
+	{
+		if (!(TimeManager.Instance == null) && m_Melting)
+		{
+			m_MeltTimer += TimeManager.Instance.m_NormalDelta;
+			float num = 1f;
+			float num2 = m_MeltTimer / num;
+			base.transform.localScale = new Vector3(1f, 1f - num2, 1f);
+			if (m_MeltTimer > num)
+			{
+				StopUsing();
+			}
+		}
+	}
+}
