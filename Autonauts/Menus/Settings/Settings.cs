@@ -3,6 +3,10 @@ using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
 {
+	private Slider m_SupaTimescaleSlider;
+
+	private float m_OldSupaTimescale;
+
 	private Slider m_SFXSlider;
 
 	private float m_OldSFXVolume;
@@ -29,8 +33,11 @@ public class Settings : MonoBehaviour
 		{
 			CameraManager.Instance.EnableVignette(Enabled: false);
 		}
-		m_SFXSlider = base.transform.Find("Panel").Find("SFXSlider").GetComponent<Slider>();
+		m_SFXSlider = transform.Find("Panel").Find("SFXSlider").GetComponent<Slider>();
 		m_SFXSlider.value = SettingsManager.Instance.m_SFXVolume;
+
+
+
 		m_OldSFXVolume = SettingsManager.Instance.m_SFXVolume;
 		m_MusicSlider = base.transform.Find("Panel").Find("MusicSlider").GetComponent<Slider>();
 		m_MusicSlider.value = SettingsManager.Instance.m_MusicVolume;

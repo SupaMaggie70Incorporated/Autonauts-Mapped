@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -9,7 +9,9 @@
     <LangVersion>Preview</LangVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
-  <PropertyGroup />
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility">
       <HintPath>..\Dependancies\Managed\Accessibility.dll</HintPath>
@@ -281,6 +283,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Autonauts\Worldgen\" />
-    <Folder Include="Autonauts\Tiles\" />
   </ItemGroup>
 </Project>

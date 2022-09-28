@@ -24,7 +24,7 @@ public class MainMenu : BaseMenu
 	protected new void Start()
 	{
 		base.Start();
-		new ModManagerMain();
+		Instantiate(new GameObject()).AddComponent<GlobalSupaScript>();
 		string[] array = new string[12]
 		{
 			"StartButton", "LoadButton", "ContinueButton", "RecordingsButton", "SettingsButton", "AboutButton", "DiscordButton", "WikiButton", "BadgesButton", "QuitButton",
