@@ -284,7 +284,5 @@
   <ItemGroup>
     <Folder Include="Autonauts\Input\Keyboard\" />
     <Folder Include="Autonauts\Items\Toys\" />
-    <Folder Include="Autonauts\CreativeMode\" />
-    <Folder Include="Autonauts\Worldgen\" />
   </ItemGroup>
 </Project>

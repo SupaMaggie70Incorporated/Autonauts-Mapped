@@ -1,5 +1,4 @@
 using System;
-using SupaMaggie70;
 using UnityEngine;
 
 public class MainMenu : BaseMenu
@@ -24,7 +23,6 @@ public class MainMenu : BaseMenu
 	protected new void Start()
 	{
 		base.Start();
-		Instantiate(new GameObject()).AddComponent<GlobalSupaScript>();
 		string[] array = new string[12]
 		{
 			"StartButton", "LoadButton", "ContinueButton", "RecordingsButton", "SettingsButton", "AboutButton", "DiscordButton", "WikiButton", "BadgesButton", "QuitButton",
